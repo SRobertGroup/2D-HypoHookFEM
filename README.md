@@ -7,3 +7,5 @@ Using finite element modeling (FEM), we investigated the biomechanics underlying
 Our control configuration started with a pre-formed apical hook mesh replicating the anatomical traits of the wild type, characterized by distinct gradients in cell length, such as longer cells on the outer curvature and shorter ones on the inner side. The mechanical properties of this baseline scenario featured high anisotropy and a high strain rate. 
 Subsequently, we simulated three aberrant scenarios, systematically altering the strain rate, the mechanical anisotropy, or both simultaneously.
 
+![initial geometry for col0](./data/init_geom.png)
+
