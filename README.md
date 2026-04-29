@@ -46,4 +46,30 @@ mamba activate hook_env
 ## 3. Usage and Repository content
 
 
+### Repository Structure
+
+- **`src/`**: Contains the core logic of the project.
+  - **`main.R`**: The primary entry point for R-based analysis. It handles data loading, growth gradient calculations, simulation scenario building (WT vs. aberrant mutants), and kinematic analysis of hook angles.
+  - **`R/io_function.R`**: A comprehensive library of R functions for spatial data processing, including:
+    - `load_data_hook()`: Loads and cleans cell geometry data.
+    - `write_geo()`: Generates `.geo` files for GMSH based on cell polygons.
+    - `basal_to_apical()`: Maps cell positions along the hook's longitudinal axis.
+    - `quadrant_stat_analysis()`: Performs statistical tests (ANOVA, Levene's) on growth quadrants.
+  - **`notebook/`**: Likely contains exploratory analysis or documentation notebooks.
+
+- **`data/`**: Project data and assets.
+  - **`2D_hook_data.csv`**: The main dataset containing cell-level measurements.
+  - **`in/`**: Input files for simulations and meshes.
+  - **`out/`**: Output directory for generated figures and raw analysis results.
+  - **`fig/`**: Visualizations and diagrams (e.g., `init_geom.png`).
+
+- **`conda/`**: Environment configuration.
+  - **`hook_env.yaml`**: Conda/Mamba environment file with all necessary dependencies (Python 3.9, FEniCS, GMSH, Bvpy, etc.).
+
+### Key Features
+- **FEM Growth Simulations**: Investigates the effects of strain rate and mechanical anisotropy on hook maintenance.
+- **Automated Mesh Generation**: Functions to convert biological cell geometries into high-quality meshes for FEM.
+- **Kinematic Analysis**: Tools to quantify hook angle changes over time across different genotypes (Col-0, *cyp*, *dcr*).
+- **Spatial Gradients**: Mapping of growth properties (elongation, strain) across inner/outer and basal/apical quadrants.
+
 
