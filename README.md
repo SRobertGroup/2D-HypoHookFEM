@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/916556435.svg)](https://doi.org/10.5281/zenodo.19880942)
+
 # Exploring growth mechanics of apical hook morphogenesis in Arabidopsis using FEM
 
 > Sara Raggi, Hemamshu Ratnakaram, Özer Erguvan, Asal Atakhani, Adrien Heymans, Manuel Petit, Marco Marconi, Sijia Liu, François Jobert,Thomas Vain, Siamsa M. Doyle, Krzysztof Wabnik, Stéphane Verger, and Stéphanie Robert.
